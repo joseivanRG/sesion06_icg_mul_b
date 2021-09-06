@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+   <title>Logo</title>
+</head>
+<body>
+   <canvas id="logo" width="1142px" height="658px" style="border: 2px solid green;"></canvas>
+
+
+   <script>
+     window.addEventListener('load', () => {
+       let canvasLogo = document.getElementById('logo');
+       let ctx = canvasLogo.getContext('2d');
+
+    ctx.beginPath();
+    ctx.arc(132, 162, 100, 0, Math.PI * 2, true); 
+    ctx.stroke();   
+
+    
+    ctx.beginPath();
+    ctx.moveTo(272, 1);
+    ctx.lineTo(150, 261);
+    ctx.stroke();
+    ctx.moveTo(272, 1);
+    ctx.lineTo(135, 192);
+    ctx.stroke();
+    ctx.moveTo(150, 262);
+    ctx.lineTo(34, 145);
+    ctx.stroke();
+    ctx.moveTo(43, 115);
+    ctx.lineTo(135, 194);
+    ctx.stroke();
+    
+    
+    ctx.beginPath();
+    ctx.moveTo(260, 22);
+    ctx.lineTo(143, 238);
+    ctx.stroke();
+   	ctx.moveTo(260, 22);
+    ctx.lineTo(142, 208);
+    ctx.stroke();
+    ctx.moveTo(143, 238);
+    ctx.lineTo(38, 130);
+    ctx.stroke();
+    ctx.moveTo(142, 208);
+    ctx.lineTo(40, 120);
+    ctx.stroke();
+    
+    
+    ctx.beginPath();
+    ctx.moveTo(143, 238);
+    ctx.lineTo(133, 243);
+    ctx.stroke();
+    
+
+     });
+  </script>  
+</body>
+</html>
